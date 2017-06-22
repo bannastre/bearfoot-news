@@ -8,8 +8,4 @@ function storyComponentHasStory() {
 	assert.isEqual(storyComponent.story, story);
 }
 
-function runUnitTests() {
-	storyComponentHasStory()
-	console.log("Team Barefoot approves these unit tests.")
-}
 
