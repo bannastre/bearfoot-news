@@ -3,8 +3,7 @@
   var assert = new Assert();
 
   function displayHeadline() {
-    var headline = "Team Barefoot makes waves in tech news";
-    assert.hasContent('headlines', headline);
+    assert.hasContent('headline-list', story.headline);
   }
 
   function runFeatureTests() {
