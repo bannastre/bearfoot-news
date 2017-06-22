@@ -1,14 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-//var headline;
-//var text;
+var storyComponent = new StoryComponent(story);
 
- renderStory = function(story, storyComponent) {
-	var story = new Story(headline, text);
-	var storyComponent = new StoryComponent(story);	
-
+ renderStory = function(storyComponent) {
  		storyComponent.render();
  }
 
- renderStory(story, storyComponent);
+ renderStory(storyComponent);
 });

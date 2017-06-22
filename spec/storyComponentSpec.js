@@ -7,5 +7,3 @@ function storyComponentHasStory() {
 	var storyComponent = new StoryComponent(story);
 	assert.isEqual(storyComponent.story, story);
 }
-
-
