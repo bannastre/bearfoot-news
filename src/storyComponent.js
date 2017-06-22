@@ -6,7 +6,6 @@ function StoryComponent(story) {
 	this.setup = function() {
 	 	var el = document.createElement('li');
 		el.innerHTML = story.headline;
-		console.log(story.headline);
  		return el;
 	};
 

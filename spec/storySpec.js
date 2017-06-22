@@ -14,5 +14,6 @@ function hasText() {
 function runUnitTests(){
 	hasHeadline();
 	hasText();
+	storyComponentHasStory();
   console.log("Team Bearfoot: Unit Tests Passed");
 }
