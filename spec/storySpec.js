@@ -15,7 +15,7 @@ function storyHasHeadline() {
 	}
 
 function storyHasUrl() {
-	var url = "https://www.theguardian.com/sport/live/2017/jun/22/royal-ascot-2017-buildup-to-the-gold-cup-live"
+	var url = "https://www.theguardian.com/politics/live/2017/jun/23/merkel-says-mays-offer-on-eu-citizens-is-a-good-start-live-updates"
 	assert.isEqual(story.url, url);
 }
 
