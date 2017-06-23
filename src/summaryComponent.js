@@ -15,7 +15,7 @@ function SummaryComponent(storyUrl) {
     aylienReq.open("GET", requestUrl, false);
     aylienReq.send();
 
-    return aylienReq.responseText;
+    this.text = JSON.parse(aylienReq.responseText);
   }
 
 }
