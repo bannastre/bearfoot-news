@@ -11,6 +11,6 @@ function hasUrl() {
 function runsApiCall() {
   var storyUrl = "http://www.telegraph.co.uk/fashion/news/why-going-barefoot-has-become-the-new-status-symbol/";
   var summaryComponent = new SummaryComponent(storyUrl);
-  summaryComponent.summarize();
+  summaryComponent.summarize(storyUrl);
   assert.includes(summaryComponent.text, "burn your shoes")
 }
