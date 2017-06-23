@@ -8,7 +8,11 @@ function hasHeadline() {
 }
 
 function runUnitTests(){
+	console.log("Story: ")
 	hasHeadline();
 	storyComponentHasStory();
+	console.log("Summary Component: ")
+	summaryComponentHasUrl();
+	runsAylienApiCall();
   console.log("Team Bearfoot: Unit Tests Passed");
 }
