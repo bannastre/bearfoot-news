@@ -1,5 +1,4 @@
-function Story(headline, text) {
-  this.headline = headline;
-  this.text = text;
+function Story(informationObject) {
+  this.informationObject = informationObject;
+  this.headline = informationObject["webTitle"];
 }
-var story = new Story("This is a headline!", "This is a body!");
