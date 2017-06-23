@@ -14,7 +14,7 @@ function Assert() {
   };
 
   this.isEqual = function(testSubject, expectedResult) {
-    if (testSubject !== expectedResult ) {
+    if ( testSubject !== expectedResult ) {
       throw new Error("Expected " + testSubject + " to be Equal to " + expectedResult + "." );
     }
     return (testSubject + " is Equal to " + expectedResult);
@@ -27,6 +27,13 @@ function Assert() {
     }
     return (elementID + " has content " + expectedResult + ".");
   };
+
+  this.includes = function(object, expectedResult) {
+    if ( !object.includes(expectedResult) ) {
+      throw new Error("Expected " + object + " to include " + expectedResult);
+    }
+    return (object + " includes " + expectedResult);
+  }
 }
 
 var assert = new Assert();
