@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	var guardianApi = "http://content.guardianapis.com/search?api-key=test"
+	var guardianApi = "http://content.guardianapis.com/search?api-key=test&show-fields=thumbnail"
 
 	function getGuardianApi(api) {
 		var xmlHttp = new XMLHttpRequest();
