@@ -6,16 +6,16 @@ function SummaryComponent(storyUrl) {
 
   this.summarize = function(storyUrl) {
 
-    var URL = "https://api.aylien.com/api/v1/summarize";
-    var APP_KEY = secretApiKeys["Aylien"]["Key"];
-    var APP_ID = secretApiKeys["Aylien"]["AppID"];
+    var MIDDLEWARE_URL = "https://damp-headland-20696.herokuapp.com/aylien?apiRequestUrl="
+    var AYLIEN_URL = "https://api.aylien.com/api/v1/summarize?url=";
 
-    var requestUrl = URL + storyUrl;
+    var requestUrl = MIDDLEWARE_URL + AYLIEN_URL + storyUrl;
+    var aylienReq = new XMLHttpRequest();
 
-    // curl requestUrl \
-    // -H `X-AYLIEN-TextAPI-Application-Key: ${APP_KEY}` \
-    // -H `X-AYLIEN-TextAPI-Application-ID: ${APP_ID}`
+    aylienReq.open("GET", requestUrl, false);
+    aylienReq.send();
 
+    return aylienReq.responseText;
   }
 
 }
