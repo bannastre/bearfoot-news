@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		var resultsHash = guardianApiJson["response"]["results"];
 	    for(var i = 0; i < resultsHash.length; i++) {
 				var newStory = new Story(resultsHash[i])
-				console.log(resultsHash[i])
-				//console.log(resultsHash[i]["fields"][""]);
 				var storyComponent = new StoryComponent(newStory);
 				storyComponent.render();
 	    }
