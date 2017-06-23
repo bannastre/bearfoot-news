@@ -5,8 +5,8 @@ function StoryComponent(story) {
 
 	this.setup = function() {
 	 	var el = document.createElement('li');
-		el.innerHTML = story.headline;
- 		return el;
+		el.innerHTML =  "</br> <img src=" + story.image + "> </br> " + story.headline + "</br></br>";
+		return el;
 	};
 
 	this.render = function() {
