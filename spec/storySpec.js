@@ -12,8 +12,13 @@ function hasText() {
 }
 
 function runUnitTests(){
+	console.log("Story: ")
 	hasHeadline();
 	hasText();
+	console.log("Story Component: ")
 	storyComponentHasStory();
+	console.log("Summary Component: ")
+	hasUrl();
+	runsApiCall();
   console.log("Team Bearfoot: Unit Tests Passed");
 }
