@@ -15,6 +15,10 @@ function storyHasUrl() {
 function runUnitTests(){
 	storyHasHeadline();
 	storyHasUrl();
+	console.log("Story: ")
 	storyComponentHasStory();
+	console.log("Summary Component: ")
+	summaryComponentHasUrl();
+	runsAylienApiCall();
   console.log("Team Bearfoot: Unit Tests Passed");
 }
