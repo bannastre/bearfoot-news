@@ -12,7 +12,7 @@ function runUnitTests(){
 	hasHeadline();
 	storyComponentHasStory();
 	console.log("Summary Component: ")
-	hasUrl();
-	runsApiCall();
+	summaryComponentHasUrl();
+	runsAylienApiCall();
   console.log("Team Bearfoot: Unit Tests Passed");
 }
