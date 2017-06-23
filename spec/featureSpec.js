@@ -7,7 +7,7 @@
   }
 
 	function displayApiHeadline() {
-		assert.hasContent('headline-list', "Trumpcare is like a vampire, set on sinking its teeth into the poor")
+		assert.hasContent('headline-list', "Royal Ascot 2017")
 	}
 
   function runFeatureTests() {

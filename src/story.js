@@ -1,4 +1,4 @@
-function Story(hash) {
-  this.hash = hash;
-  this.headline = hash["webTitle"];
+function Story(informationObject) {
+  this.informationObject = informationObject;
+  this.headline = informationObject["webTitle"];
 }
