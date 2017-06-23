@@ -7,8 +7,8 @@
   }
 
 	function displayApiHeadline() {
-		assert.hasContent('headline-list', "Juncker says May's EU citizens Brexit offer is 'not sufficient' - Politics live")
-	}	
+		assert.hasContent('headline-list', "Trumpcare is like a vampire, set on sinking its teeth into the poor")
+	}
 
   function runFeatureTests() {
     displayHeadline();

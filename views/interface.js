@@ -17,16 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		var resultsHash = apiJson["response"]["results"];
 	    for(var i = 0; i < resultsHash.length; i++) {
 				var newStory = new Story(resultsHash[i])
+				var storyComponent = new StoryComponent(newStory);
+				storyComponent.render();
 	    }
 	}
 
 	createStories()
-
-	var storyComponent = new StoryComponent(story);
-
- 	renderStory = function(storyComponent) {
- 		storyComponent.render();
- 	}
-
- 	renderStory(storyComponent);
 });
