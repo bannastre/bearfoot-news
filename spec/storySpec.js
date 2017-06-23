@@ -13,12 +13,13 @@ function storyHasUrl() {
 }
 
 function runUnitTests(){
+	console.log("Story: ")
 	storyHasHeadline();
 	storyHasUrl();
-	console.log("Story: ")
+	console.log("Story Component: ")
 	storyComponentHasStory();
 	console.log("Summary Component: ")
 	summaryComponentHasUrl();
 	runsAylienApiCall();
-  console.log("Team Bearfoot: Unit Tests Passed");
+  	console.log("Team Bearfoot: Unit Tests Passed");
 }
