@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	    for(var i = 0; i < resultsHash.length; i++) {
 				var newStory = new Story(resultsHash[i])
 				var storyComponent = new StoryComponent(newStory);
+				var summaryComponent = new SummaryComponent(newStory.url);
+				console.log(summaryComponent);
 				storyComponent.render();
 	    }
 	}

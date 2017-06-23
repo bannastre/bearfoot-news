@@ -9,7 +9,7 @@ function SummaryComponent(storyUrl) {
     var MIDDLEWARE_URL = "https://damp-headland-20696.herokuapp.com/aylien?apiRequestUrl="
     var AYLIEN_URL = "https://api.aylien.com/api/v1/summarize?url=";
 
-    var requestUrl = MIDDLEWARE_URL + AYLIEN_URL + storyUrl;
+    var requestUrl = `${MIDDLEWARE_URL} + ${AYLIEN_URL} + ${storyUrl}`;
     var aylienReq = new XMLHttpRequest();
 
     aylienReq.open("GET", requestUrl, false);
@@ -17,5 +17,6 @@ function SummaryComponent(storyUrl) {
 
     this.text = JSON.parse(aylienReq.responseText);
   }
+  this.summarize()
 
 }
