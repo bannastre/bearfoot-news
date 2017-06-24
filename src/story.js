@@ -4,4 +4,5 @@ function Story(informationObject) {
   this.headline = informationObject["webTitle"];
 	this.image = informationObject["fields"]["thumbnail"];
 	this.url = informationObject["webUrl"];
+	this.fullText = informationObject["fields"]["bodyText"];
 }
