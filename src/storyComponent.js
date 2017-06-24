@@ -6,6 +6,10 @@ function StoryComponent(story) {
 	this.setup = function() {
 	 	var el = document.createElement('li');
 		el.innerHTML =  "</br> <img src=" + story.image + "> </br> " + story.headline + "</br></br>";
+		el.addEventListener("click", function() {
+			document.getElementById("full-text").innerHTML = story.fullText;
+			console.log(story.fullText);
+		})
 		return el;
 	};
 

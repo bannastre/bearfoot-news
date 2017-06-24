@@ -11,7 +11,11 @@
 	}
 */
 
-  function runFeatureTests() {
+	function displayApiFullText() {
+	
+	};
+  
+	function runFeatureTests() {
 		displayApiHeadline();
 	//	displayApiImage();
     console.log('Team Bearfoot : Feature Tests Passed');
