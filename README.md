@@ -1,5 +1,12 @@
 # bearfoot-news
 
+## Getting started  
+
+1. Clone the repo  
+2. run ```open views/index.html``` from the bearfoot-news directory  
+
+## User Stories
+
 ```
 As a busy politician
 I can see all of today's headlines in one place
